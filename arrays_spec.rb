@@ -25,3 +25,13 @@ describe "find_duplicate_in" do
     expect(find_duplicate_in(array)).to eq 4
   end
 end
+
+describe "find_duplicate_in" do
+  it "returns the duplicated element" do
+    array = [1, 1, 2 ]
+    expect(find_dup_number(array)).to eq 1
+
+    array = [1, 2, 2, 3 ]
+    expect(find_dup_number(array)).to eq 2
+  end
+end

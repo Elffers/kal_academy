@@ -23,3 +23,13 @@ def find_duplicate_in(array)
   ary = ary1.length.odd? ? ary1 : ary2
   find_duplicate_in(ary)
 end
+
+# 4. Given an array that contains numbers from 1 to n-1 and exactly 1
+# duplicate, find that duplicate.
+
+def find_dup_number(array)
+  n = array.length - 1
+  expected_sum = n*(n+1)/2
+  actual_sum = array.reduce(:+)
+  actual_sum - expected_sum
+end
